@@ -72,20 +72,6 @@ func main() {
 	}
 }
 
-func filePrepender(filename string, opts ...string) string {
-	var category, fullCommand string
-	if len(opts) >= 3 {
-		category = opts[0]
-		// title = opts[1]
-		fullCommand = opts[2]
-	}
-	header := fmt.Sprintf(`---
-category: %s
-title: %s
----
-`, category, fullCommand)
-	return header
-}
 
 func linkHandler(name string, opts ...string) string {
 	return fmt.Sprintf("./%s", strings.TrimSuffix(name, ".md"))
@@ -155,3 +141,4 @@ func createCmdRoot() *root.CmdRoot {
 
 	return root.NewCmdRoot(cmdFactory, "", "")
 }
+	/
