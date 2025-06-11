@@ -14,9 +14,7 @@ import (
 	"github.com/reubenmiller/go-c8y-cli/v2/pkg/dataview"
 	"github.com/reubenmiller/go-c8y-cli/v2/pkg/logger"
 	"github.com/reubenmiller/go-c8y/pkg/c8y"
-	"github.com/spf13/pflag"
-	"github.com/spf13/viper"
-	"go.uber.org/zap/zapcore"
+	
 )
 
 func main() {
