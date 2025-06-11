@@ -72,14 +72,7 @@ func main() {
 	}
 }
 
-
-func linkHandler(name string, opts ...string) string {
-	return fmt.Sprintf("./%s", strings.TrimSuffix(name, ".md"))
-}
-
-func fatal(msg interface{}) {
-	fmt.Fprintln(os.Stderr, msg)
-	os.Exit(1)
+it(1)
 }
 
 func createCmdRoot() *root.CmdRoot {
@@ -141,4 +134,11 @@ func createCmdRoot() *root.CmdRoot {
 
 	return root.NewCmdRoot(cmdFactory, "", "")
 }
-	/
+	
+func linkHandler(name string, opts ...string) string {
+	return fmt.Sprintf("./%s", strings.TrimSuffix(name, ".md"))
+}
+
+func fatal(msg interface{}) {
+	fmt.Fprintln(os.Stderr, msg)
+	os.Ex/
